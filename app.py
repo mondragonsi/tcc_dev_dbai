@@ -7,7 +7,7 @@ df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapmi
 app = Dash(__name__)
 
 app.layout = html.Div([
-    html.H1(children='First App in Dash', style={'textAlign':'center'}),
+    html.H1(children='DBAi - The Proactive DBA Tool', style={'textAlign':'center'}),
     dcc.Dropdown(df.country.unique(), 'Brazil', id='dropdown-selection'),
     dcc.Graph(id='graph-content')
 ])
